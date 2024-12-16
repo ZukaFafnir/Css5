@@ -1,20 +1,27 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main(){
-	int number;
-	int sum=0;
-	
+	int positive_int;
+	int sum = 0;
+	int i=1;
+	printf("Please enter a positive integer: ");
 	do {
-	printf("please enter a positive integer");
-	scanf("%d",&number);
-	
-	if ( number > 0){
-		for (int i = 1;i <= number; i++){
-			sum += i;}
+		scanf("%d", &positive_int);
+		
+		if (positive_int > 0) {
+		for(i ;i <= positive_int ; i++){
+			sum+=i;}
 		}
-	else 
-	{
-	printf("Wrong, please enter a positive integer again.");}
-	while(number<=0);
-	printf("The sum of all numbers from 1 to the entered number is %d",sum);
-	return 0;
+		else {
+            printf("Wrong, please enter a positive integer again.\n");}
+            
+		printf("The sum of all numbers from 1 to the entered number is %d\n", sum);
+	}
+		while(positive_int<=0);
+		return 0;
+		
+	
+	
+	
+	
 }
