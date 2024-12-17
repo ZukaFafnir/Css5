@@ -1,12 +1,10 @@
 #include<stdio.h>
 int main(){
-	int number=100;
-	for(number;number>=0;number--){
+	for(int number=100;number>0;number--){
+		printf("%d, ",number);
 		if(number==0){
-			printf("%d",number);
 			break;
 		}
-		printf("%d,",number);
 }
 	return 0;
 }
