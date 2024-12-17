@@ -3,13 +3,12 @@
 int main(){
 	int positive_int;
 	int sum = 0;
-	int i=1;
 	printf("Please enter a positive integer: ");
 	do {
 		scanf("%d", &positive_int);
 		
 		if (positive_int > 0) {
-		for(i ;i <= positive_int ; i++){
+		for(int i=1 ;i <= positive_int ; i++){
 			sum+=i;}
 		}
 		else {
